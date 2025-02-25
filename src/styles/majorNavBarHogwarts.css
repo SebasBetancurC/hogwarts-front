@@ -6,20 +6,6 @@
     border-image-slice: 1;
 }
 
-
-.nav-logos::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    width: 80%;
-    height: 10px;
-    background: radial-gradient(circle, rgba(232, 228, 201, 0.8) 0%, rgba(28, 28, 28, 0) 80%);
-    border-radius: 50%;
-    transform: translateX(-50%);
-}
-
-
 .logo-font-nav {
     object-fit: contain;
     width: 25%;
@@ -80,7 +66,7 @@
     }
 
 
-    /* Animación sutil al desplegar el menú */
+    
     @keyframes fadeIn {
         from {
             opacity: 0;
@@ -93,7 +79,7 @@
         }
     }
 
-    /* Color de los textos dentro del dropdown */
+    
     .dropdown-item {
         color: #3e2f1c;
         font-weight: bold;

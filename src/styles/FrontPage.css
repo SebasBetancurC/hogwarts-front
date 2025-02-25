@@ -1,23 +1,4 @@
-.front-page {
-
-    .front-page-content {
-        background-color: #000;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        .hogwarts-image {
-            object-fit: contain;
-            width: 680px;
-            height: auto;
-            mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
-            -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
-        }
-
-
-
-
-
-
-    }
+.emblemImage{
+    width: 300px;
 }
+

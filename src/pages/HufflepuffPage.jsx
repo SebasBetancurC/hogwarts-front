@@ -6,9 +6,7 @@ export const HufflepuffPage = () => {
 
   return (
     <>
-      <FrontPage
-        frontPage={hufflepuff.frontpage}
-      />
+      <FrontPage frontPage={hufflepuff.frontpage}/>
     </>
   )
 }

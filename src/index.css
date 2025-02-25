@@ -3,3 +3,27 @@
 * {
     font-family: "Benne", serif;
 }
+
+body {
+    background-color: black !important;
+}
+
+:root {
+    --font-size-title: 10rem;
+    --font-size-text: 1.2rem;
+}
+
+
+
+@media (max-width: 768px) {
+    :root {
+        --font-size-title: 4rem;
+        --font-size-text: 1rem;
+    }
+}
+@media (max-width: 480px) {
+    :root {
+        --font-size-title: 4rem;
+        --font-size-text: 0.9rem;
+    }
+}

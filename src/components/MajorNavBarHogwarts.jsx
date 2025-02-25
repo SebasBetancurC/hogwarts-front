@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/majorNavBarHogwarts.css";
 import { NavLink, useLocation } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
-import { houses } from "../data/houses";
+
 
 
 export const MajorNavBarHogwarts = () => {
@@ -45,7 +45,7 @@ export const MajorNavBarHogwarts = () => {
                                     Mundo Mágico
 
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul className="dropdown-menu">
                                     <li><a className="dropdown-item" href="#">Historia de Hogwarts</a></li>
                                     <li><hr className="dropdown-divider" /></li>
                                     <li><a className="dropdown-item" href="#">Mapa del Merodeador</a></li>
@@ -64,7 +64,7 @@ export const MajorNavBarHogwarts = () => {
                                         const isActive = location.pathname === `/${house.name}`;
 
                                         return (
-                                            <React.Fragment key={house.id}>
+                                            <React.Fragment key={house._id || index}>
                                                 <li>
                                                     <NavLink
                                                         className="dropdown-item"
@@ -86,7 +86,7 @@ export const MajorNavBarHogwarts = () => {
                                                         />
                                                         {house.name}
 
-                                                        {/* Línea de colores debajo del texto */}
+                                                        
                                                         <div className="house-underline"
                                                             style={{
                                                                 background: `repeating-linear-gradient(
@@ -120,7 +120,7 @@ export const MajorNavBarHogwarts = () => {
                                     <img className="ico-link-witch" src="src\assets\images\images-hogwarts\dobby-x32.png" />
                                     <span>Magia y Personajes</span>
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul className="dropdown-menu">
                                     <li><a className="dropdown-item" href="#">Magos y Brujas</a></li>
                                     <li><hr className="dropdown-divider" /></li>
                                     <li><a className="dropdown-item" href="#">Criaturas Mágicas</a></li>
