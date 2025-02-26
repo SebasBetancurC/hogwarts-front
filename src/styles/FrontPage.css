@@ -1,4 +1,11 @@
-.emblemImage{
-    width: 300px;
+.emblemImage {
+    width: 250px;
 }
 
+.houseContainer {
+
+    position: relative;
+    padding-bottom: "20px";
+
+
+}

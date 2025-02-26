@@ -1,4 +1,5 @@
 import { FrontPage } from "../components/FrontPage"
+import { Line } from "../components/Line"
 import { houses } from "../data/houses"
 
 export const SlytherinPage = () => {
@@ -8,7 +9,9 @@ export const SlytherinPage = () => {
     <>
       <FrontPage
         frontPage={slytherin.frontpage}
+        
       />
+      <Line></Line>
     </>
   )
 }
