@@ -40,7 +40,7 @@ export const WizardsWitches = ({ search }) => {
                                 <p>
                                     {truncateText(wizard.biography, 280)}
                                     {wizard.biography.length > 280 && (
-                                        <Link to={`/wizard/${wizard._id}`} className="see-more">
+                                        <Link to="/Biography" className="see-more">
                                             Ver más
                                         </Link>
                                     )}
