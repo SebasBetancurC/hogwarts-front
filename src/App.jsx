@@ -4,6 +4,7 @@ import { GryffindorPage } from "./pages/GryffindorPage.jsx";
 import { HufflepuffPage } from "./pages/HufflepuffPage.jsx";
 import { RavenclawPage } from "./pages/RavenclawPage.jsx";
 import { SlytherinPage } from "./pages/SlytherinPage.jsx";
+import { WizardsWitchesPage } from "./pages/WizardsWitchesPage.jsx";
 import { HomePageHogwarts } from "./pages/HomePageHogwarts.jsx";
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/hufflepuff' element={<HufflepuffPage></HufflepuffPage>}></Route>
         <Route path='/ravenclaw' element={<RavenclawPage></RavenclawPage>}></Route>
         <Route path='/slytherin' element={<SlytherinPage></SlytherinPage>}></Route>
+        <Route path='/WizardsAndWitches' element={<WizardsWitchesPage></WizardsWitchesPage>}></Route>
         <Route path='/*' element={<Navigate to='/' /> }></Route>
       </Routes>
     </>

@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 import "../styles/line.css";
 
 export const Line = () => {
-    console.log("🔴 Line component renderizado");
 
     const { data: houses, loading, error } = useFetch("http://localhost:5000/api/houses");
     const location = useLocation();

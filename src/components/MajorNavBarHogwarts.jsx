@@ -121,7 +121,7 @@ export const MajorNavBarHogwarts = () => {
                                     <span>Magia y Personajes</span>
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="#">Magos y Brujas</a></li>
+                                    <li><NavLink className="dropdown-item" to="/WizardsAndWitches">Magos y Brujas</NavLink></li>
                                     <li><hr className="dropdown-divider" /></li>
                                     <li><a className="dropdown-item" href="#">Criaturas Mágicas</a></li>
                                 </ul>

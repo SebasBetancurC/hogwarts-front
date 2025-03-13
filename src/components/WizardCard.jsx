@@ -14,7 +14,7 @@ export const WizardCard = () => {
     const houseName = location.pathname.replace("/", "").toLowerCase();
 
     const filteredWizards = wizards.filter(wizard =>
-        wizard.house && wizard.house.name.toLowerCase() === houseName
+        wizard.house && wizard.house.name.toLowerCase() === houseName && wizard.isFounder === true
     );
 
     return (
