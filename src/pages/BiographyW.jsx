@@ -1,5 +1,6 @@
 import React from 'react'
 import { InformationWs } from '../components/InformationWs'
+import { WizardCard } from '../components/WizardCard'
 import { useParams } from 'react-router-dom';
 import { useFetch } from '../hooks/useFetch';
 
@@ -15,6 +16,7 @@ export const BiographyW = () => {
   return (
     <>
       {wizard ? <InformationWs wizard={wizard} /> : <p>No se encontró información.</p>}
+      {wizard ? <WizardCard wizard={wizard} /> : <p>No se encontró información.</p>}
     </>
   )
 }

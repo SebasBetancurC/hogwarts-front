@@ -1,7 +1,7 @@
 .flip-card {
     background-color: transparent;
-    width: 350px;
-    height: 550px;
+    width: 250px;
+    height: 450px;
     perspective: 1000px;
     border-radius: 15px;
 }
@@ -15,6 +15,12 @@
     transition: transform 0.8s;
     transform-style: preserve-3d;
 
+}
+
+.see-more {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
 }
 
 
@@ -36,9 +42,9 @@
 .image-container {
     border-radius: 50%;
     background-color: transparent;
-    height: 430px;
+    height: 300px;
     border: 1px solid #a67c52;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;

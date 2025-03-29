@@ -23,8 +23,8 @@ export const InformationWs = ({ wizard }) => {
                     <button className="nav-link active" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="true">Biografía</button>
                 </div>
                 <div className="tab-content" id="v-pills-tabContent">
-                    <div className="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">{wizard?.biography}</div>
-                    <div className="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                    <div className="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabIndex="0">{wizard?.biography}</div>
+                    <div className="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabIndex="0">
                         <h1
                             style={{
                                 color: wizard?.house?.colors?.[0] || '#000',
@@ -36,8 +36,8 @@ export const InformationWs = ({ wizard }) => {
                         </h1>
                         <img className='container-emblem' src={wizard?.house?.emblemFrontPage || 'Sin casa asignada'} alt="" />
                     </div>
-                    <div className="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">{wizard?.patronus || 'Sin Patronus'}</div>
-                    <div className="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">{wizard?.wand || 'Sin varita'}</div>
+                    <div className="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabIndex="0">{wizard?.patronus || 'Sin Patronus'}</div>
+                    <div className="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabIndex="0">{wizard?.wand || 'Sin varita'}</div>
                 </div>
             </div>
 

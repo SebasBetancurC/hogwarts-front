@@ -50,7 +50,7 @@ export const WizardsWitches = ({ search }) => {
                     </div>
                 ))
             ) : (
-                <p>No hay magos registrados.</p>
+                <p style={{ color: '#E8E4C9', fontSize: '1.5rem'}}>No hay magos registrados.</p>
             )}
         </div>
     );
