@@ -7,6 +7,44 @@
     padding: 40px;
     gap: 30px;
 
+    h1{
+        font-size: 1.8rem;
+    }
+
+    .card-inner {
+        position: relative;
+        text-align: center;
+        width: 18%;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card-front {
+        background: linear-gradient(to bottom, #f5deb3, #e6c285, #c2a875);
+        border: 1px solid #a67c52;
+        color: black;
+        border-radius: 15px;
+    }
+
+    .image-container {
+        border-radius: 50%;
+        background-color: transparent;
+        height: 280px;
+        border: 1px solid #a67c52;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .image-personage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
 
     .tab-pane {
         color: #E8E4C9;
@@ -20,7 +58,7 @@
         right: 120px;
         border-radius: 50% !important;
         border: solid 2px;
-    
+
         &:hover {
             color: #e6c285;
         }
@@ -47,6 +85,7 @@
         display: flex;
         width: 35% !important;
         height: 40% !important;
+        justify-content: center;
     }
 
     .orbit {
@@ -72,4 +111,10 @@
     .nav-link:nth-child(4) {
         transform: rotate(270deg) translate(110px) rotate(-270deg);
     }
+
+    .container-emblem{
+        height: 280px;
+    }
+
+
 }

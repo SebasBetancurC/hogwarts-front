@@ -1,7 +1,7 @@
 import React from 'react';
 import "../styles/pageWizardsWitches.css";
 import { useFetch } from "../hooks/useFetch";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export const WizardsWitches = ({ search }) => {
     const { data: wizards, loading, error } = useFetch("http://localhost:5000/api/wizards");
@@ -9,9 +9,9 @@ export const WizardsWitches = ({ search }) => {
     if (loading) return <p>Cargando magos...</p>;
     if (error) return <p>Error: {error}</p>;
 
-    
+
     const filteredWizards = wizards.filter(wizard =>
-        wizard.name.toLowerCase().includes(search.toLowerCase()) 
+        wizard.name.toLowerCase().includes(search.toLowerCase())
     );
 
     const truncateText = (text, length) => {
@@ -40,9 +40,9 @@ export const WizardsWitches = ({ search }) => {
                                 <p>
                                     {truncateText(wizard.biography, 280)}
                                     {wizard.biography.length > 280 && (
-                                        <Link to="/Biography" className="see-more">
+                                        <NavLink to={`/biography/${wizard._id}`} className="see-more">
                                             Ver más
-                                        </Link>
+                                        </NavLink>
                                     )}
                                 </p>
                             </div>

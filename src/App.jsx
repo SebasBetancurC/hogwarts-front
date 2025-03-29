@@ -22,7 +22,7 @@ function App() {
         <Route path='/ravenclaw' element={<RavenclawPage></RavenclawPage>}></Route>
         <Route path='/slytherin' element={<SlytherinPage></SlytherinPage>}></Route>
         <Route path='/WizardsAndWitches' element={<WizardsWitchesPage></WizardsWitchesPage>}></Route>
-        <Route path='/Biography' element={<BiographyW></BiographyW>}></Route>
+        <Route path='/Biography/:id' element={<BiographyW></BiographyW>}></Route>
         <Route path='/*' element={<Navigate to='/' /> }></Route>
       </Routes>
     </>
